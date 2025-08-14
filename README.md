@@ -1,8 +1,5 @@
 # 🌐 Franco Paganoni - Portfolio Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/francopaganoni/portfolio?color=blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/francopaganoni/portfolio?color=brightgreen)
-![GitHub stars](https://img.shields.io/github/stars/francopaganoni/portfolio?style=social)
 ![Vercel Deploy](https://img.shields.io/badge/deployed%20on-Vercel-black?logo=vercel)
 
 Welcome to the repository of my personal portfolio website.  
