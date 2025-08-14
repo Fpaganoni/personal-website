@@ -40,9 +40,9 @@ The website features a clean, responsive, and modern design with a focus on **UI
 
 ## 📬 Contact
 
-- **LinkedIn:** [linkedin.com/in/francopaganoni](https://linkedin.com/in/francopaganoni)
-- **Email:** francopaganoni.dev@gmail.com
-- **GitHub:** [github.com/francopaganoni](https://github.com/francopaganoni)
+- **LinkedIn:** [linkedin.com/in/francopaganoni](https://www.linkedin.com/in/franco-paganoni-a100aa245/?locale=en_US)
+- **Email:** franco.paganoni1@gmail.com
+- **GitHub:** [github.com/francopaganoni](https://github.com/Fpaganoni)
 
 ---
 
