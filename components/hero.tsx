@@ -1,6 +1,8 @@
-import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Download } from "lucide-react"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { Mail, Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiMail } from "react-icons/hi";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -9,35 +11,55 @@ export function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Hola, soy <span className="text-primary">Tu Nombre</span>
+              Hello there, I'm{" "}
+              <span className="text-primary">Franco Paganoni</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">Desarrollador Full Stack & Diseñador UI/UX</p>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+              Full Stack Developer
+            </p>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              Creo experiencias digitales excepcionales combinando código limpio con diseño intuitivo. Especializado en
-              React, Next.js y tecnologías modernas.
+              I create exceptional digital experiences by combining clean code
+              with intuitive design. Specializing in React, TypeScript, Next.js,
+              and modern technologies.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
-              <Button size="lg" className="gap-2">
+              <a
+                href="mailto:franco.paganoni1@gmail.com"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors cursor-pointer"
+              >
                 <Mail className="h-5 w-5" />
-                Contáctame
-              </Button>
-              <Button variant="outline" size="lg" className="gap-2 bg-transparent">
+                Contact me
+              </a>
+              <a
+                href="/cv/Franco-Paganoni-Fullstack-Developer.pdf"
+                download="Franco-Paganoni-Fullstack-Developer.pdf"
+                className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
+              >
                 <Download className="h-5 w-5" />
-                Descargar CV
-              </Button>
+                Download CV
+              </a>
             </div>
 
             <div className="flex gap-4 justify-center md:justify-start">
-              <Button variant="ghost" size="icon">
-                <Github className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon">
-                <Mail className="h-5 w-5" />
-              </Button>
+              <a
+                href="https://github.com/Fpaganoni"
+                className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
+              >
+                <FaGithub className="h-6 w-6 " />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/franco-paganoni-a100aa245/?locale=en_US"
+                className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
+              >
+                <FaLinkedin className="h-6 w-6 " />
+              </a>
+              <a
+                href="mailto:franco.paganoni1@gmail.com"
+                className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
+              >
+                <HiMail className="h-6 w-6" />
+              </a>
             </div>
           </div>
 
@@ -45,8 +67,8 @@ export function Hero() {
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-full overflow-hidden border-4 border-primary/20">
                 <Image
-                  src="/placeholder.svg?height=320&width=320"
-                  alt="Foto de perfil"
+                  src="https://ik.imagekit.io/p2ho5d9bi/Portfolio/Pefil%20-%20CV.png?updatedAt=1754667885113"
+                  alt="Profile photo"
                   width={320}
                   height={320}
                   className="w-full h-full object-cover"
@@ -59,5 +81,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
