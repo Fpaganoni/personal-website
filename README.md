@@ -1,8 +1,5 @@
 # 🌐 Franco Paganoni - Portfolio Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/francopaganoni/portfolio?color=blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/francopaganoni/portfolio?color=brightgreen)
-![GitHub stars](https://img.shields.io/github/stars/francopaganoni/portfolio?style=social)
 ![Vercel Deploy](https://img.shields.io/badge/deployed%20on-Vercel-black?logo=vercel)
 
 Welcome to the repository of my personal portfolio website.  
@@ -43,9 +40,9 @@ The website features a clean, responsive, and modern design with a focus on **UI
 
 ## 📬 Contact
 
-- **LinkedIn:** [linkedin.com/in/francopaganoni](https://linkedin.com/in/francopaganoni)
-- **Email:** francopaganoni.dev@gmail.com
-- **GitHub:** [github.com/francopaganoni](https://github.com/francopaganoni)
+- **LinkedIn:** [linkedin.com/in/francopaganoni](https://www.linkedin.com/in/franco-paganoni-a100aa245/?locale=en_US)
+- **Email:** franco.paganoni1@gmail.com
+- **GitHub:** [github.com/francopaganoni](https://github.com/Fpaganoni)
 
 ---
 
