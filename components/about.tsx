@@ -1,56 +1,68 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Code, Palette, Zap, Users } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { Code, Palette, Zap, Users } from "lucide-react";
 
 export function About() {
   const features = [
     {
       icon: Code,
-      title: "Desarrollo Full Stack",
-      description: "Experiencia en frontend y backend con tecnologías modernas",
+      title: "Full Stack Development",
+      description: "Frontend and backend experience with modern technologies",
     },
     {
       icon: Palette,
-      title: "Diseño UI/UX",
-      description: "Creación de interfaces intuitivas y experiencias de usuario excepcionales",
+      title: "UI/UX Design",
+      description:
+        "Creating intuitive interfaces and exceptional user experiences",
     },
     {
       icon: Zap,
-      title: "Rendimiento",
-      description: "Optimización de aplicaciones para máxima velocidad y eficiencia",
+      title: "Performance",
+      description: "Optimizing applications for maximum speed and efficiency",
     },
     {
       icon: Users,
-      title: "Colaboración",
-      description: "Trabajo efectivo en equipos ágiles y comunicación clara",
+      title: "Collaboration",
+      description: "Effective work in agile teams and clear communication",
     },
-  ]
+  ];
 
   return (
     <section id="about" className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Sobre mí</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About me</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Soy un desarrollador apasionado con más de 3 años de experiencia creando soluciones digitales innovadoras y
-            centradas en el usuario.
+            I am a Full Stack Developer specializing in React and TypeScript,
+            passionate about building robust and scalable web solutions. My
+            focus is on creating clean, modular, and high-quality code, applying
+            best practices at every stage of the development lifecycle.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Mi Historia</h3>
+            <h3 className="text-2xl font-semibold mb-6">My story</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Comencé mi viaje en el desarrollo web hace varios años, fascinado por la posibilidad de crear
-                experiencias digitales que impacten positivamente en la vida de las personas.
+                I've always been super curious about how tech works. I started
+                out building simple websites, but soon found my real passion was
+                full-stack development—creating robust, real-world solutions.
+                That's why I specialize in React and TypeScript; they're the
+                tools that help me build things efficiently.
               </p>
               <p>
-                A lo largo de mi carrera, he trabajado en proyectos diversos, desde aplicaciones web complejas hasta
-                sitios corporativos, siempre enfocándome en la calidad del código y la experiencia del usuario.
+                Working on a bunch of different projects, from freelance gigs to
+                a bootcamp team, taught me a lot. I learned that teamwork is
+                key, and I got used to working in agile environments. I'm all
+                about writing clean, modular code that's easy to scale and
+                maintain, and I stick to best practices in everything I do.
               </p>
               <p>
-                Mi enfoque combina habilidades técnicas sólidas con un ojo para el diseño, lo que me permite crear
-                soluciones completas y efectivas.
+                Today, I'm all about continuous learning and using the best
+                tools out there. I see AI as a partner, not a replacement, that
+                helps me optimize my workflow so I can focus on the cool,
+                complex stuff. My ultimate goal is to team up with people who
+                have big ideas to make a real, lasting impact.
               </p>
             </div>
           </div>
@@ -61,7 +73,9 @@ export function About() {
                 <CardContent className="pt-6">
                   <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h4 className="font-semibold mb-2">{feature.title}</h4>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {feature.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -69,5 +83,5 @@ export function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
