@@ -115,7 +115,7 @@ export function Projects() {
                     size="sm"
                     className="gap-2 bg-transparent"
                   >
-                    <a href={project.githubUrl}>
+                    <a href={project.githubUrl} target="_blank">
                       <FaGithub className="h-4 w-4" />
                       Code
                     </a>

@@ -1,8 +1,13 @@
 /** @type {import('postcss-load-config').Config} */
 const config = {
-  plugins: {
-    '@tailwindcss/postcss': {},
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
+  theme: {
+    extend: {},
   },
-}
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
 
-export default config
+export default config;
