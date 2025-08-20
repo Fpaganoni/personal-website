@@ -16,7 +16,7 @@ export function Projects() {
     {
       title: "E-commerce Platform",
       description:
-        "Complete e-commerce platform with shopping cart, payments, and inventory management.",
+        "This is a comprehensive full-stack e-commerce platform that handles everything from product display to order fulfillment. Built with modern technologies like Next.js and Node.js, it includes a fully functional shopping cart, secure payment integration, and a powerful inventory management system. The user interface is crafted with React and Tailwind CSS to be both elegant and responsive, ensuring a smooth experience for both customers and administrators.",
       image:
         "https://ik.imagekit.io/p2ho5d9bi/Portfolio/e-commerce-page.png?updatedAt=1755253334062",
       technologies: [
@@ -32,23 +32,30 @@ export function Projects() {
       githubUrl: "https://github.com/Fpaganoni/E-commerce",
     },
     {
-      title: "NFT Responsive Card",
+      title: "NFT Responsive Card 3D",
       description:
-        "This is a responsive NFT preview card built using only HTML and CSS, as part of a frontend learning challenge. It features a clean, modern design showcasing an NFT with hover effects and mobile responsiveness.",
+        "This is a responsive NFT preview card built using HTML, CSS and JavaScript as part of a frontend learning challenge. It features a clean, modern design showcasing an NFT with hover and 3D effects, mobile responsiveness ",
       image:
         "https://ik.imagekit.io/p2ho5d9bi/Portfolio/nft-responsive-card.png?updatedAt=1755261496833",
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://nft-responsive-card.vercel.app/",
       githubUrl: "https://github.com/Fpaganoni/NFT-responsive-card",
     },
     {
-      title: "Portfolio Website",
+      title: "Incident Management Application",
       description:
-        "Sitio web portfolio responsivo con animaciones suaves y diseño moderno.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "Incident Management Application This repository contains a modern and comprehensive web application for managing and resolving incidents. Created by a team of developers to optimize the support workflow, this tool allows users to report problems and enables support agents to efficiently manage, assign, and track them.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/solvex-front_eieO9IEXh?updatedAt=1755702844913",
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "Next.js",
+        "TypeScript",
+        "TanStack Query",
+      ],
+      liveUrl: "https://solvex-front-iota.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/solvex-front/tree/main",
     },
     {
       title: "Weather Dashboard",
