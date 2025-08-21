@@ -32,6 +32,25 @@ export function Projects() {
       githubUrl: "https://github.com/Fpaganoni/E-commerce",
     },
     {
+      title: "Cinema Website",
+      description:
+        "This is a full-stack movie web application that allows users to explore and manage a dynamic film catalog. Built with modern technologies like Node.js, Express.js, and MongoDB, it supports adding and storing movies in a database with real-time rendering on the client side. The frontend is developed with HTML5, CSS3, and JavaScript, bundled using Webpack, while Axios handles communication with the backend API. With CORS enabled for secure data exchange, the platform delivers a smooth and interactive experience across its three main views.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/cinema-website.png?updatedAt=1755796609043",
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Node.js",
+        "Espress.js",
+        "MongoDB",
+        "Axios",
+        "Webpack",
+      ],
+      liveUrl: "https://cinema-website-kohl.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/Cinema-website",
+    },
+    {
       title: "NFT Responsive Card 3D",
       description:
         "This is a responsive NFT preview card built using HTML, CSS and JavaScript as part of a frontend learning challenge. It features a clean, modern design showcasing an NFT with hover and 3D effects, mobile responsiveness ",
@@ -56,15 +75,6 @@ export function Projects() {
       ],
       liveUrl: "https://solvex-front-iota.vercel.app/",
       githubUrl: "https://github.com/Fpaganoni/solvex-front/tree/main",
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "Dashboard del clima con pronósticos detallados y visualizaciones interactivas.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["JavaScript", "Chart.js", "Weather API"],
-      liveUrl: "#",
-      githubUrl: "#",
     },
   ];
 
