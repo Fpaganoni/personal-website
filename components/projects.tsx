@@ -76,6 +76,41 @@ export function Projects() {
       liveUrl: "https://solvex-front-iota.vercel.app/",
       githubUrl: "https://github.com/Fpaganoni/solvex-front/tree/main",
     },
+    {
+      title: "Tattoo Studio Landing Page",
+      description:
+        "The Tattoo Booking System is a full-stack web application for managing appointments in tattoo studios. It allows clients to register and autonomously manage their appointments.The project is built with React.js on the frontend, and a backend with Node.js, Express, and TypeScript, connected to a PostgreSQL database.This system demonstrates my ability to develop a complete and efficient software architecture.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/tattoo-website-six.vercel.app_home.png?updatedAt=1756211635835",
+      technologies: [
+        "React",
+        "Axios",
+        "Vite",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "TypeORM",
+      ],
+      liveUrl: "https://tattoo-website-six.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/Tattoo-website",
+    },
+    {
+      title: "Insure Landing Page",
+      description:
+        "This is a responsive insurance company landing page built as a Frontend Mentor challenge. The project demonstrates modern web development practices with Mobile-first Responsive Design, Semantic HTML5, CSS Custom Properties, Flexbox Layout, Professional Design, Complete Navigation, Feature Highlights.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/insure-landing-page-index.html.png?updatedAt=1756213285417",
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Responsive Design",
+        "Flexbox",
+        "Mobile-first",
+      ],
+      liveUrl: "https://fpaganoni.github.io/Insure-landing-page/",
+      githubUrl: "https://github.com/Fpaganoni/Insure-landing-page",
+    },
   ];
 
   return (

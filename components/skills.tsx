@@ -1,44 +1,45 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
 
 export function Skills() {
   const skillCategories = [
     {
       title: "Frontend",
       skills: [
-        { name: "React/Next.js", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Vue.js", level: 75 },
+        { name: "React/Next.js", level: 85 },
+        { name: "TypeScript", level: 80 },
+        { name: "Tailwind CSS", level: 90 },
+        { name: "JavaScript", level: 80 },
       ],
     },
     {
       title: "Backend",
       skills: [
         { name: "Node.js", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "PostgreSQL", level: 85 },
+        { name: "Express", level: 80 },
+        { name: "PostgreSQL", level: 80 },
         { name: "MongoDB", level: 75 },
       ],
     },
     {
-      title: "Herramientas",
+      title: "Tools & Others",
       skills: [
         { name: "Git/GitHub", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Figma", level: 85 },
+        { name: "Figma", level: 60 },
+        { name: "IA", level: 85 },
+        { name: "Vercel/Render", level: 75 },
       ],
     },
-  ]
+  ];
 
   return (
     <section id="skills" className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Habilidades</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Tecnologías y herramientas que domino para crear soluciones digitales completas.
+            Technologies and tools that I master to create complete digital
+            solutions.
           </p>
         </div>
 
@@ -53,7 +54,9 @@ export function Skills() {
                   <div key={skillIndex}>
                     <div className="flex justify-between mb-2">
                       <span className="text-sm font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                      <span className="text-sm text-muted-foreground">
+                        {skill.level}%
+                      </span>
                     </div>
                     <Progress value={skill.level} className="h-2" />
                   </div>
@@ -64,5 +67,5 @@ export function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }

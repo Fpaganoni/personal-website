@@ -22,10 +22,32 @@ export function Contact() {
     email: "",
     message: "",
   });
+  const [status, setStatus] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario
+    setStatus("Sending...");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("Error sending message.");
+        console.error("Error response:", response.statusText);
+      }
+    } catch (error) {
+      setStatus("Internal error sending message.");
+      console.error("Error:", error);
+    }
     console.log("Formulario enviado:", formData);
   };
 
@@ -148,6 +170,7 @@ export function Contact() {
                   <Send className="h-4 w-4" />
                   Send Message
                 </Button>
+                {status && <p>{status}</p>}
               </form>
             </CardContent>
           </Card>
