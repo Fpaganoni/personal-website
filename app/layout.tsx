@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   generator: "v0.dev",
   authors: [{ name: "Franco Paganoni", url: "https://francopaganoni.dev" }],
   openGraph: {
-    title: "Portfolio de Franco Paganoni",
+    title: "Franco Paganoni's Portfolio",
     description: "Desarrollador web especializado en React y Next.js.",
     url: "https://francopaganoni.dev",
     siteName: "Franco Paganoni",
