@@ -10,15 +10,16 @@ export const metadata: Metadata = {
   authors: [{ name: "Franco Paganoni", url: "https://francopaganoni.dev" }],
   openGraph: {
     title: "Franco Paganoni's Portfolio",
-    description: "Desarrollador web especializado en React y Next.js.",
+    description:
+      "My personal web site, portfolio and blog. See my projects and articles. Technologies used: React, Next.js, Node.js, TypeScript, JavaScript, HTML, CSS. Contact me for freelance work or collaboration.",
     url: "https://francopaganoni.dev",
     siteName: "Franco Paganoni",
     images: [
       {
-        url: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/LogoFP.png?updatedAt=1756385239385",
+        url: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/LogoFPFS.png?updatedAt=1756388635775",
         width: 1200,
         height: 630,
-        alt: "Imagen de portada del sitio de Franco Paganoni",
+        alt: "Cover image from Franco Paganoni's site",
       },
     ],
     locale: "en_US",
