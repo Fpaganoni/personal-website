@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Mail, Download } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
@@ -23,43 +23,47 @@ export function Hero() {
               and modern technologies.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
-              <a
-                href="mailto:franco.paganoni1@gmail.com"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors cursor-pointer"
-              >
-                <Mail className="h-5 w-5" />
-                Contact me
-              </a>
-              <a
-                href="/cv/Franco-Paganoni-Fullstack-Developer.pdf"
-                download="Franco-Paganoni-Fullstack-Developer.pdf"
-                className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
-              >
-                <Download className="h-5 w-5" />
-                Download CV
-              </a>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start mb-8">
+              <Button asChild className="cursor-pointer text-md">
+                <a href="mailto:franco.paganoni1@gmail.com">
+                  <Mail className="h-5 w-5" />
+                  Contact me
+                </a>
+              </Button>
+              <Button asChild className="cursor-pointer text-md">
+                <a
+                  href="/cv/Franco-Paganoni-Fullstack-Developer.pdf"
+                  download="Franco-Paganoni-Fullstack-Developer.pdf"
+                >
+                  <Download className="h-5 w-5" />
+                  Download CV
+                </a>
+              </Button>
             </div>
 
             <div className="flex gap-4 justify-center md:justify-start">
-              <a
-                href="https://github.com/Fpaganoni"
-                className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
-              >
-                <FaGithub className="h-6 w-6 " />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/franco-paganoni-a100aa245/?locale=en_US"
-                className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
-              >
-                <FaLinkedin className="h-6 w-6 " />
-              </a>
-              <a
-                href="mailto:franco.paganoni1@gmail.com"
-                className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
-              >
-                <HiMail className="h-6 w-6" />
-              </a>
+              <Button asChild className="cursor-pointer ">
+                <a href="https://github.com/Fpaganoni" target="_blank">
+                  <FaGithub className="size-5" />
+                </a>
+              </Button>
+              <Button asChild className="cursor-pointer ">
+                <a
+                  href="https://www.linkedin.com/in/franco-paganoni-a100aa245/?locale=en_US"
+                  className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
+                  target="_blank"
+                >
+                  <FaLinkedin className="size-5" />
+                </a>
+              </Button>
+              <Button asChild className="cursor-pointer">
+                <a
+                  href="mailto:franco.paganoni1@gmail.com?subject=Professional Inquiry&body=Hello, I would like to contact you about..."
+                  className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
+                >
+                  <HiMail className="size-6" />
+                </a>
+              </Button>
             </div>
           </div>
 

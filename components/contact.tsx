@@ -65,7 +65,7 @@ export function Contact() {
       icon: Mail,
       title: "Email",
       value: "franco.paganoni1@gmail.com",
-      href: "mailto:franco.paganoni1@gmail.com",
+      href: "mailto:franco.paganoni1@gmail.com?subject=Professional Inquiry&body=Hello, I would like to contact you about...",
     },
     {
       icon: Phone,
@@ -77,7 +77,7 @@ export function Contact() {
       icon: MapPin,
       title: "Location",
       value: "Hasselt, Belgium ",
-      href: "#",
+      href: "https://maps.google.com/?q=Hasselt, Belgium",
     },
   ];
 
@@ -103,9 +103,11 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium">{info.title}</h4>
+
                     <a
                       href={info.href}
                       className="text-muted-foreground hover:text-primary transition-colors"
+                      target="_blank"
                     >
                       {info.value}
                     </a>
@@ -134,7 +136,7 @@ export function Contact() {
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
+                <div className="space-y-1">
                   <Label htmlFor="name">Name</Label>
                   <Input
                     id="name"
@@ -144,7 +146,7 @@ export function Contact() {
                     required
                   />
                 </div>
-                <div>
+                <div className="space-y-1">
                   <Label htmlFor="email">Email</Label>
                   <Input
                     id="email"
@@ -155,7 +157,7 @@ export function Contact() {
                     required
                   />
                 </div>
-                <div>
+                <div className="space-y-1">
                   <Label htmlFor="message">Message</Label>
                   <Textarea
                     id="message"
@@ -170,7 +172,7 @@ export function Contact() {
                   <Send className="h-4 w-4" />
                   Send Message
                 </Button>
-                {status && <p>{status}</p>}
+                {status && <p className="text-center">{status}</p>}
               </form>
             </CardContent>
           </Card>
