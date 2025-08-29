@@ -57,6 +57,7 @@ export function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t">
+            <ThemeSwitch />
             {navItems.map((item) => (
               <Link
                 key={item.href}

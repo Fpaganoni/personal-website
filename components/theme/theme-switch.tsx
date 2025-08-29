@@ -5,9 +5,12 @@ import { Switch } from "../ui/switch";
 import { Label } from "../ui/label";
 
 export function ThemeSwitch() {
+  const [isMounted, setIsMounted] = useState<boolean>(false);
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
+    setIsMounted(true);
+
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setDarkMode(savedTheme === "dark");
@@ -19,6 +22,8 @@ export function ThemeSwitch() {
   // return system preference, if no savedTheme
 
   useEffect(() => {
+    if (!isMounted) return; // Avoid running on server or before mount
+
     if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
@@ -26,7 +31,12 @@ export function ThemeSwitch() {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [darkMode]);
+  }, [darkMode, isMounted]);
+
+  // Render nothing until mounted to avoid hydration mismatch
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div className="flex items-center space-x-2">
@@ -47,7 +57,7 @@ export function ThemeSwitch() {
         ) : (
           <img
             src="https://ik.imagekit.io/p2ho5d9bi/Portfolio/dark-mode.png?updatedAt=175563625800"
-            alt=""
+            alt="Icon to switch to light mode"
             width={25}
             height={20}
           />
