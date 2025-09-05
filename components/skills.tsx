@@ -26,7 +26,7 @@ export function Skills() {
       skills: [
         { name: "Git/GitHub", level: 90 },
         { name: "Figma", level: 65 },
-        { name: "IA", level: 85 },
+        { name: "IA", level: 80 },
         { name: "Vercel/Render", level: 75 },
       ],
     },
