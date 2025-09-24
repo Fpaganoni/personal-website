@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Franco Paganoni",
     images: [
       {
-        url: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/LogoFPFS.png?updatedAt=1756388635775",
+        url: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/icon-web.png?updatedAt=1758698275640",
         width: 1200,
         height: 630,
         alt: "Cover image from Franco Paganoni's site",
