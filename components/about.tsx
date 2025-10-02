@@ -67,9 +67,9 @@ export function About() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center p-6">
+              <Card key={index} className="text-center p-6 pt-4">
                 <CardContent className="pt-6">
                   <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h4 className="font-semibold mb-2">{feature.title}</h4>
