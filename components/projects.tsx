@@ -32,23 +32,15 @@ export function Projects() {
       githubUrl: "https://github.com/Fpaganoni/E-commerce",
     },
     {
-      title: "Cinema Website",
+      title: "Room Homepage",
       description:
-        "This is a full-stack movie web application that allows users to explore and manage a dynamic film catalog. Built with modern technologies like Node.js, Express.js, and MongoDB, it supports adding and storing movies in a database with real-time rendering on the client side. The frontend is developed with HTML5, CSS3, and JavaScript, bundled using Webpack, while Axios handles communication with the backend API. With CORS enabled for secure data exchange, the platform delivers a smooth and interactive experience across its three main views.",
+        "Full frontend development of an e-commerce product page. This project emphasizes pixel-perfect design and adaptability across multiple devices. I utilized HTML and CSS for structure and styling (adopting a mobile-first approach), along with vanilla JavaScript to implement the product image carousel and manage core UI interactions.",
       image:
-        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/cinema-website.png?updatedAt=1755796609043",
-      technologies: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Node.js",
-        "Espress.js",
-        "MongoDB",
-        "Axios",
-        "Webpack",
-      ],
-      liveUrl: "https://cinema-website-kohl.vercel.app/",
-      githubUrl: "https://github.com/Fpaganoni/Cinema-website",
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/room-home.jpg?updatedAt=1760969145923",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
+      liveUrl:
+        "https://room-homepage-git-main-francos-projects-b11936e2.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/Room-homepage",
     },
     {
       title: "NFT Responsive Card 3D",
