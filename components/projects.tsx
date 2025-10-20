@@ -39,7 +39,7 @@ export function Projects() {
         "https://ik.imagekit.io/p2ho5d9bi/Portfolio/room-home.jpg?updatedAt=1760969145923",
       technologies: ["HTML5", "CSS3", "JavaScript"],
       liveUrl:
-        "https://room-homepage-git-main-francos-projects-b11936e2.vercel.app/",
+        "https://room-homepage-five-alpha.vercel.app/",
       githubUrl: "https://github.com/Fpaganoni/Room-homepage",
     },
     {
