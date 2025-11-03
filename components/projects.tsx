@@ -34,6 +34,52 @@ export function Projects() {
       githubUrl: "https://github.com/Fpaganoni/tendify",
     },
     {
+      title: "Loopstudios Website",
+      description:
+        "Loopstudios Landing Page — A modern and responsive landing page created for a Frontend Mentor challenge. Built with HTML5, CSS3, Flexbox, and Grid, it showcases strong front-end development and responsive design skills, featuring adaptive images, smooth animations, and a consistent design system for optimal user experience.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/loopstudios-website.jpg?updatedAt=1762163396609",
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "Flexbox",
+        "Grid",
+        "Responsive Design",
+        "Mobile-first",
+        ,
+      ],
+      liveUrl: "https://fpaganoni.github.io/Loopstudios-website/",
+      githubUrl: "https://github.com/Fpaganoni/Loopstudios-website",
+    },
+    {
+      title: "Room Homepage",
+      description:
+        "Full frontend development of an e-commerce product page. This project emphasizes pixel-perfect design and adaptability across multiple devices. I utilized HTML and CSS for structure and styling (adopting a mobile-first approach), along with vanilla JavaScript to implement the product image carousel and manage core UI interactions.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/room-home.jpg?updatedAt=1760969145923",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
+      liveUrl: "https://room-homepage-five-alpha.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/Room-homepage",
+    },
+    {
+      title: "Tattoo Studio Landing Page",
+      description:
+        "The Tattoo Booking System is a full-stack web application for managing appointments in tattoo studios. It allows clients to register and autonomously manage their appointments.The project is built with React.js on the frontend, and a backend with Node.js, Express, and TypeScript, connected to a PostgreSQL database.This system demonstrates my ability to develop a complete and efficient software architecture.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/tattoo-website-six.vercel.app_home.png?updatedAt=1756211635835",
+      technologies: [
+        "React",
+        "Axios",
+        "Vite",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "TypeORM",
+      ],
+      liveUrl: "https://tattoo-website-six.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/Tattoo-website",
+    },
+    {
       title: "E-commerce Platform",
       description:
         "This is a comprehensive full-stack e-commerce platform that handles everything from product display to order fulfillment. Built with modern technologies like Next.js and Node.js, it includes a fully functional shopping cart, secure payment integration, and a powerful inventory management system. The user interface is crafted with React and Tailwind CSS to be both elegant and responsive, ensuring a smooth experience for both customers and administrators.",
@@ -50,16 +96,6 @@ export function Projects() {
       ],
       liveUrl: "https://e-commerce-xi-ten-67.vercel.app/",
       githubUrl: "https://github.com/Fpaganoni/E-commerce",
-    },
-    {
-      title: "Room Homepage",
-      description:
-        "Full frontend development of an e-commerce product page. This project emphasizes pixel-perfect design and adaptability across multiple devices. I utilized HTML and CSS for structure and styling (adopting a mobile-first approach), along with vanilla JavaScript to implement the product image carousel and manage core UI interactions.",
-      image:
-        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/room-home.jpg?updatedAt=1760969145923",
-      technologies: ["HTML5", "CSS3", "JavaScript"],
-      liveUrl: "https://room-homepage-five-alpha.vercel.app/",
-      githubUrl: "https://github.com/Fpaganoni/Room-homepage",
     },
     {
       title: "NFT Responsive Card 3D",
@@ -87,24 +123,7 @@ export function Projects() {
       liveUrl: "https://solvex-front-iota.vercel.app/",
       githubUrl: "https://github.com/Fpaganoni/solvex-front/tree/main",
     },
-    {
-      title: "Tattoo Studio Landing Page",
-      description:
-        "The Tattoo Booking System is a full-stack web application for managing appointments in tattoo studios. It allows clients to register and autonomously manage their appointments.The project is built with React.js on the frontend, and a backend with Node.js, Express, and TypeScript, connected to a PostgreSQL database.This system demonstrates my ability to develop a complete and efficient software architecture.",
-      image:
-        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/tattoo-website-six.vercel.app_home.png?updatedAt=1756211635835",
-      technologies: [
-        "React",
-        "Axios",
-        "Vite",
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "TypeORM",
-      ],
-      liveUrl: "https://tattoo-website-six.vercel.app/",
-      githubUrl: "https://github.com/Fpaganoni/Tattoo-website",
-    },
+
     {
       title: "Insure Landing Page",
       description:
