@@ -16,7 +16,7 @@ export function Projects() {
     {
       title: "Modern E-commerce Trendify Store",
       description:
-        "This project is a comprehensive full-stack e-commerce platform that handles everything from product display to order fulfillment.t features a fully functional shopping cart, secure payment integration, and an inventory management system. The user interface, built with React and Tailwind CSS, ensures a modern and responsive experience.On the backend, Next.js, Express.js, and Node.js provide robust performance, while PostgreSQL ensures reliable data persistence.TypeScript adds static type safety across both the frontend and backend, improving maintainability and scalability.",
+        "This project is a comprehensive full-stack e-commerce platform that handles everything from product display to order fulfillment. It features a fully functional shopping cart, secure payment integration, and an inventory management system. The user interface, built with Next.js, React and Tailwind CSS, ensures a modern and responsive experience. On the backend, Node.js and WordPress as a serverless, provide robust performance, while PostgreSQL ensures reliable data persistence. TypeScript adds static type safety across both the frontend and backend, improving maintainability and scalability.",
       image:
         "https://ik.imagekit.io/p2ho5d9bi/Portfolio/modern-e-commerce.jpg?updatedAt=1762156800695",
       technologies: [
