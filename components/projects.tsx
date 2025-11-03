@@ -14,6 +14,26 @@ import Image from "next/image";
 export function Projects() {
   const projects = [
     {
+      title: "Modern E-commerce Trendify Store",
+      description:
+        "This project is a comprehensive full-stack e-commerce platform that handles everything from product display to order fulfillment.t features a fully functional shopping cart, secure payment integration, and an inventory management system. The user interface, built with React and Tailwind CSS, ensures a modern and responsive experience.On the backend, Next.js, Express.js, and Node.js provide robust performance, while PostgreSQL ensures reliable data persistence.TypeScript adds static type safety across both the frontend and backend, improving maintainability and scalability.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/modern-e-commerce.jpg?updatedAt=1762156800695",
+      technologies: [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "pnpm",
+        "Node.js",
+        "Tailwind",
+        "WordPress",
+        "React Context",
+        "Radix UI",
+      ],
+      liveUrl: "https://tendify-two.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/tendify",
+    },
+    {
       title: "E-commerce Platform",
       description:
         "This is a comprehensive full-stack e-commerce platform that handles everything from product display to order fulfillment. Built with modern technologies like Next.js and Node.js, it includes a fully functional shopping cart, secure payment integration, and a powerful inventory management system. The user interface is crafted with React and Tailwind CSS to be both elegant and responsive, ensuring a smooth experience for both customers and administrators.",
@@ -38,8 +58,7 @@ export function Projects() {
       image:
         "https://ik.imagekit.io/p2ho5d9bi/Portfolio/room-home.jpg?updatedAt=1760969145923",
       technologies: ["HTML5", "CSS3", "JavaScript"],
-      liveUrl:
-        "https://room-homepage-five-alpha.vercel.app/",
+      liveUrl: "https://room-homepage-five-alpha.vercel.app/",
       githubUrl: "https://github.com/Fpaganoni/Room-homepage",
     },
     {
