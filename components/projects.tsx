@@ -34,6 +34,24 @@ export function Projects() {
       githubUrl: "https://github.com/Fpaganoni/tendify",
     },
     {
+      title: "Loopstudios Website",
+      description:
+        "Loopstudios Landing Page — A modern and responsive landing page created for a Frontend Mentor challenge. Built with HTML5, CSS3, Flexbox, and Grid, it showcases strong front-end development and responsive design skills, featuring adaptive images, smooth animations, and a consistent design system for optimal user experience.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/loopstudios-website.jpg?updatedAt=1762163396609",
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "Flexbox",
+        "Grid",
+        "Responsive Design",
+        "Mobile-first",
+        ,
+      ],
+      liveUrl: "https://fpaganoni.github.io/Loopstudios-website/",
+      githubUrl: "https://github.com/Fpaganoni/Loopstudios-website",
+    },
+    {
       title: "Crypto Mate Website",
       description:
         "CryptoMate is a modern, responsive landing page for a community-driven Solana meme token. Built with Next.js (app router) and TypeScript, it features accessible Radix UI components, dark-mode, and interactive tokenomics charts. The design emphasizes user engagement and clarity, showcasing the token's unique features and community focus.",
@@ -51,24 +69,6 @@ export function Projects() {
       ],
       liveUrl: "https://www.cryptomate.website",
       githubUrl: "https://github.com/Fpaganoni/crypto-mate",
-    },
-    {
-      title: "Loopstudios Website",
-      description:
-        "Loopstudios Landing Page — A modern and responsive landing page created for a Frontend Mentor challenge. Built with HTML5, CSS3, Flexbox, and Grid, it showcases strong front-end development and responsive design skills, featuring adaptive images, smooth animations, and a consistent design system for optimal user experience.",
-      image:
-        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/loopstudios-website.jpg?updatedAt=1762163396609",
-      technologies: [
-        "HTML5",
-        "CSS3",
-        "Flexbox",
-        "Grid",
-        "Responsive Design",
-        "Mobile-first",
-        ,
-      ],
-      liveUrl: "https://fpaganoni.github.io/Loopstudios-website/",
-      githubUrl: "https://github.com/Fpaganoni/Loopstudios-website",
     },
     {
       title: "Room Homepage",
