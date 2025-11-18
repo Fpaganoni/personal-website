@@ -34,6 +34,25 @@ export function Projects() {
       githubUrl: "https://github.com/Fpaganoni/tendify",
     },
     {
+      title: "Crypto Mate Website",
+      description:
+        "CryptoMate is a modern, responsive landing page for a community-driven Solana meme token. Built with Next.js (app router) and TypeScript, it features accessible Radix UI components, dark-mode, and interactive tokenomics charts. The design emphasizes user engagement and clarity, showcasing the token's unique features and community focus.",
+      image: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/cryptomate.jpg",
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "React",
+        "Next.js",
+        "Responsive Design",
+        "Mobile-first",
+        "TypeScript",
+        "Radix UI",
+        "Chart.js",
+      ],
+      liveUrl: "https://www.cryptomate.website",
+      githubUrl: "https://github.com/Fpaganoni/crypto-mate",
+    },
+    {
       title: "Loopstudios Website",
       description:
         "Loopstudios Landing Page — A modern and responsive landing page created for a Frontend Mentor challenge. Built with HTML5, CSS3, Flexbox, and Grid, it showcases strong front-end development and responsive design skills, featuring adaptive images, smooth animations, and a consistent design system for optimal user experience.",
@@ -123,7 +142,21 @@ export function Projects() {
       liveUrl: "https://solvex-front-iota.vercel.app/",
       githubUrl: "https://github.com/Fpaganoni/solvex-front/tree/main",
     },
-
+    {
+      title: "Clipboard Landing Page",
+      description:
+        "Modern landing page responsive that highlights clean visuals and a simple UX—perfect demo or template. Built with HTML5 and CSS3, it features a mobile-first design, Flexbox layout, and adaptive images for optimal viewing across devices.",
+      image: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/clipboard.jpg",
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "Responsive Design",
+        "Flexbox",
+        "Mobile-first",
+      ],
+      liveUrl: "https://fpaganoni.github.io/Clipboard-landing-page-master/",
+      githubUrl: "https://github.com/Fpaganoni/Clipboard-landing-page-master",
+    },
     {
       title: "Insure Landing Page",
       description:
