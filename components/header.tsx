@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeSwitch } from "./theme/theme-switch";
+import { motion } from "motion/react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +20,25 @@ export function Header() {
 
   return (
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <motion.div
+        initial={{
+          backgroundColor: "var(--background)",
+          opacity: 0.2,
+          transform: "translateY(-50px)",
+        }}
+        whileInView={{
+          backgroundColor: "var(--background)",
+          opacity: 1,
+          transform: "translateY(0px)",
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="container mx-auto px-4 sm:px-6 lg:px-8"
+      >
         <div className="flex justify-between items-center py-4">
-          <Link href="#home" className="text-2xl font-bold text-primary">
+          <Link
+            href="#home"
+            className="text-2xl font-bold text-primary hover:scale-105 transition-scale duration-300"
+          >
             Portfolio
           </Link>
 
@@ -32,7 +49,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-lg text-muted-foreground hover:text-primary transition-colors"
+                className="text-lg text-muted-foreground hover:text-primary transition-colors hover:scale-105 transition-scale duration-300"
               >
                 {item.label}
               </Link>
@@ -70,7 +87,7 @@ export function Header() {
             ))}
           </nav>
         )}
-      </div>
+      </motion.div>
     </header>
   );
 }
