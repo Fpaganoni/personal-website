@@ -19,7 +19,7 @@ export function Header() {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b z-50">
+    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b z-50 ">
       <motion.div
         initial={{
           backgroundColor: "var(--background)",

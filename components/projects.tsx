@@ -187,9 +187,14 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 overflow-hidden">
           {projects.map((project, index) => (
             <Card
+              motionProps={{
+                initial: { opacity: 0, transform: "translateY(-100px)" },
+                whileInView: { opacity: 1, transform: "translateY(0px)" },
+                transition: { duration: 0.5, delay: 0.2 },
+              }}
               key={index}
               className="overflow-hidden hover:shadow-lg transition-shadow"
             >
