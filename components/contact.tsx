@@ -15,6 +15,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { motion } from "motion/react";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -84,18 +85,35 @@ export function Contact() {
   return (
     <section id="contact" className="py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, transform: "translateY(50px)" }}
+          whileInView={{ opacity: 1, transform: "translateY(0)" }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             ¿Do you have a project in mind? I'd love to hear about it. Contact
             me and let's work together.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-            <div className="space-y-6">
+            <motion.h3
+              initial={{ opacity: 0, transform: "translateX(-100px)" }}
+              whileInView={{ opacity: 1, transform: "translateX(0)" }}
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+              className="text-2xl font-semibold mb-6"
+            >
+              Contact Information
+            </motion.h3>
+            <motion.div
+              initial={{ opacity: 0, transform: "translateX(-100px)" }}
+              whileInView={{ opacity: 1, transform: "translateX(0)" }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+              className="space-y-6"
+            >
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -114,9 +132,14 @@ export function Contact() {
                   </div>
                 </div>
               ))}
-            </div>
+            </motion.div>
 
-            <div className="mt-8">
+            <motion.div
+              initial={{ opacity: 0, transform: "translateX(-100px)" }}
+              whileInView={{ opacity: 1, transform: "translateX(0)" }}
+              transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+              className="mt-8"
+            >
               <h4 className="font-medium mb-4">¿Why work with me?</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• Clear and consistent communication</li>
@@ -124,10 +147,22 @@ export function Contact() {
                 <li>• Clean and well-documented code</li>
                 <li>• Post-launch support</li>
               </ul>
-            </div>
+            </motion.div>
           </div>
 
-          <Card>
+          <Card
+            motionProps={{
+              initial: {
+                opacity: 0,
+                transform: "translateX(150px) rotate(40deg)",
+              },
+              whileInView: {
+                opacity: 1,
+                transform: "translateX(0) rotate(0deg)",
+              },
+              transition: { duration: 0.5, delay: 0.2, ease: "easeOut" },
+            }}
+          >
             <CardHeader>
               <CardTitle>Send me a message</CardTitle>
               <CardDescription>

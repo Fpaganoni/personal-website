@@ -50,7 +50,10 @@ export function Hero() {
                 whileInView={{ opacity: 1, transform: "translateY(0px)" }}
                 transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
               >
-                <Button asChild className="cursor-pointer text-md">
+                <Button
+                  asChild
+                  className="cursor-pointer text-md hover:-translate-y-1 transition-transform duration-300"
+                >
                   <a href="mailto:franco.paganoni1@gmail.com">
                     <Mail className="h-5 w-5" />
                     Contact me
@@ -62,7 +65,10 @@ export function Hero() {
                 whileInView={{ opacity: 1, transform: "translateY(0px)" }}
                 transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
               >
-                <Button asChild className="cursor-pointer text-md">
+                <Button
+                  asChild
+                  className="cursor-pointer text-md hover:-translate-y-1 transition-transform duration-300"
+                >
                   <a
                     href="/cv/Franco-Paganoni-Fullstack-Developer.pdf"
                     download="Franco-Paganoni-Fullstack-Developer.pdf"
@@ -80,7 +86,10 @@ export function Hero() {
                 whileInView={{ opacity: 1, transform: "translateX(0px)" }}
                 transition={{ duration: 0.9, ease: "easeInOut", delay: 0.5 }}
               >
-                <Button asChild className="cursor-pointer ">
+                <Button
+                  asChild
+                  className="cursor-pointer hover:-translate-y-1 transition-transform duration-300"
+                >
                   <a href="https://github.com/Fpaganoni" target="_blank">
                     <FaGithub className="size-5" />
                   </a>
@@ -91,7 +100,10 @@ export function Hero() {
                 whileInView={{ opacity: 1, transform: "translateX(0px)" }}
                 transition={{ duration: 0.9, ease: "easeInOut", delay: 0.6 }}
               >
-                <Button asChild className="cursor-pointer ">
+                <Button
+                  asChild
+                  className="cursor-pointer hover:-translate-y-1 transition-transform duration-300"
+                >
                   <a
                     href="https://www.linkedin.com/in/franco-paganoni-a100aa245/?locale=en_US"
                     className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
@@ -106,7 +118,10 @@ export function Hero() {
                 whileInView={{ opacity: 1, transform: "translateX(0px)" }}
                 transition={{ duration: 0.9, ease: "easeInOut", delay: 0.7 }}
               >
-                <Button asChild className="cursor-pointer">
+                <Button
+                  asChild
+                  className="cursor-pointer hover:-translate-y-1 transition-transform duration-300"
+                >
                   <a
                     href="mailto:franco.paganoni1@gmail.com?subject=Professional Inquiry&body=Hello, I would like to contact you about..."
                     className="inline-block p-3 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
