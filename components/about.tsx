@@ -29,10 +29,17 @@ export function About() {
     },
   ];
 
+  const delay = 0.2;
+
   return (
-    <section id="about" className="py-16 md:py-24 bg-muted/50 ">
+    <section id="about" className="py-16 md:py-24 bg-muted/50 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 ">
+        <motion.div
+          initial={{ opacity: 0, transform: "translateY(100px)" }}
+          whileInView={{ opacity: 1, transform: "translateY(0)" }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-center mb-16 "
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About me</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             I am a Full Stack Developer specializing in React and TypeScript,
@@ -40,10 +47,14 @@ export function About() {
             focus is on creating clean, modular, and high-quality code, applying
             best practices at every stage of the development lifecycle.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.2 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeInOut" }}
+          >
             <h3 className="text-2xl font-semibold mb-6">My story</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
@@ -68,15 +79,15 @@ export function About() {
                 have big ideas to make a real, lasting impact.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
             {features.map((feature, index) => (
               <Card
                 motionProps={{
-                  initial: { opacity: 0, transform: "translateY(100px)" },
-                  whileInView: { opacity: 1, transform: "translateY(0px)" },
-                  transition: { duration: 0.5, delay: 0.2 },
+                  initial: { opacity: 0, transform: "translateX(150px)" },
+                  whileInView: { opacity: 1, transform: "translateX(0px)" },
+                  transition: { duration: 0.5, delay: delay * index },
                 }}
                 key={index}
                 className="text-center p-6 pt-4"

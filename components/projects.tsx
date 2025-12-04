@@ -1,15 +1,7 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
-import Image from "next/image";
+"use client";
+
+import { ProjectCard } from "@/components/ui/card";
+import { motion } from "motion/react";
 
 export function Projects() {
   const projects = [
@@ -46,7 +38,6 @@ export function Projects() {
         "Grid",
         "Responsive Design",
         "Mobile-first",
-        ,
       ],
       liveUrl: "https://fpaganoni.github.io/Loopstudios-website/",
       githubUrl: "https://github.com/Fpaganoni/Loopstudios-website",
@@ -179,70 +170,22 @@ export function Projects() {
   return (
     <section id="projects" className="py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, transform: "translateY(-50px)" }}
+          whileInView={{ opacity: 1, transform: "translateY(0px)" }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeInOut" }}
+          className="text-center mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A selection of projects that demonstrate my skills and experience in
             web development and interface design.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card
-              motionProps={{
-                initial: { opacity: 0, transform: "translateY(-100px)" },
-                whileInView: { opacity: 1, transform: "translateY(0px)" },
-                transition: { duration: 0.5, delay: 0.2 },
-              }}
-              key={index}
-              className="overflow-hidden hover:shadow-lg transition-shadow"
-            >
-              <div className="aspect-video relative overflow-hidden">
-                <Image
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  fill
-                  className="object-contain hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary">
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-                <div className="flex gap-2">
-                  <Button asChild size="sm" className="gap-2">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      See Project
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    className="gap-2 bg-transparent"
-                  >
-                    <a href={project.githubUrl} target="_blank">
-                      <FaGithub className="h-4 w-4" />
-                      Code
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
       </div>
