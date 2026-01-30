@@ -1,8 +1,9 @@
-"use-client";
+"use client";
 
 import { useState, useEffect } from "react";
 import { Switch } from "../ui/switch";
 import { Label } from "../ui/label";
+import { Sun, Moon } from "lucide-react";
 
 export function ThemeSwitch() {
   const [isMounted, setIsMounted] = useState<boolean>(false);
@@ -46,20 +47,16 @@ export function ThemeSwitch() {
         onCheckedChange={setDarkMode}
         className="cursor-pointer"
       />
-      <Label htmlFor="theme-mode">
+      <Label htmlFor="theme-mode" className="cursor-pointer">
         {darkMode ? (
-          <img
-            src="https://ik.imagekit.io/p2ho5d9bi/Portfolio/light-mode.png?updatedAt=1755635882399"
-            alt="Icon to switch to dark mode"
-            width={35}
-            height={35}
+          <Sun
+            className="h-6 w-6 text-foreground transition-all"
+            aria-label="Switch to light mode"
           />
         ) : (
-          <img
-            src="https://ik.imagekit.io/p2ho5d9bi/Portfolio/dark-mode.png?updatedAt=175563625800"
-            alt="Icon to switch to light mode"
-            width={25}
-            height={20}
+          <Moon
+            className="h-6 w-6 text-foreground transition-all"
+            aria-label="Switch to dark mode"
           />
         )}
       </Label>
