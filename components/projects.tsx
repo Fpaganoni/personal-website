@@ -75,8 +75,7 @@ export function Projects() {
       title: "Tattoo Studio Landing Page",
       description:
         "The Tattoo Booking System is a full-stack web application for managing appointments in tattoo studios. It allows clients to register and autonomously manage their appointments.The project is built with React.js on the frontend, and a backend with Node.js, Express, and TypeScript, connected to a PostgreSQL database.This system demonstrates my ability to develop a complete and efficient software architecture.",
-      image:
-        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/tattoo-website-six.vercel.app_home.png?updatedAt=1756211635835",
+      image: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/tattoWeb.jpg",
       technologies: [
         "React",
         "Axios",
@@ -93,8 +92,7 @@ export function Projects() {
       title: "E-commerce Platform",
       description:
         "This is a comprehensive full-stack e-commerce platform that handles everything from product display to order fulfillment. Built with modern technologies like Next.js and Node.js, it includes a fully functional shopping cart, secure payment integration, and a powerful inventory management system. The user interface is crafted with React and Tailwind CSS to be both elegant and responsive, ensuring a smooth experience for both customers and administrators.",
-      image:
-        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/e-commerce-page.png?updatedAt=1755253334062",
+      image: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/e-commerce.jpg",
       technologies: [
         "TypeScript",
         "React",
