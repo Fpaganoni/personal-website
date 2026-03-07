@@ -6,6 +6,28 @@ import { motion } from "motion/react";
 export function Projects() {
   const projects = [
     {
+      title: "Hockey Social Network Platform",
+      description:
+        "This project is a comprehensive social networking platform designed specifically for the hockey community. It provides a dedicated and interactive space for players, teams, and fans to connect, share updates, and engage with customized content. The frontend is built with Next.js, React, and Tailwind CSS, delivering a highly responsive, performant, and accessible user interface, enhanced by elegant micro-animations using Framer Motion. Under the hood, the application leverages a robust GraphQL architecture, utilizing React Query for efficient data fetching and caching, alongside Zustand for seamless global state management. It also features full internationalization (i18n) support to cater to a global user base. This project demonstrates my ability to build sophisticated, highly scalable frontend ecosystems connected to a custom backend API, prioritizing both developer experience and user-centric design.",
+      image: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/hockey-connect.jpg",
+      technologies: [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "pnpm",
+        "GraphQL",
+        "React Query",
+        "Zustand",
+        "i18n",
+        "Tailwind",
+        "Radix UI",
+        "Framer Motion",
+        "i18n/Next-intl",
+      ],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Fpaganoni/hockey-social-app",
+    },
+    {
       title: "Modern E-commerce Trendify Store",
       description:
         "This project is a comprehensive full-stack e-commerce platform that handles everything from product display to order fulfillment. It features a fully functional shopping cart, secure payment integration, and an inventory management system. The user interface, built with Next.js, React and Tailwind CSS, ensures a modern and responsive experience. On the backend, Node.js and WordPress as a serverless, provide robust performance, while PostgreSQL ensures reliable data persistence. TypeScript adds static type safety across both the frontend and backend, improving maintainability and scalability.",
@@ -26,9 +48,26 @@ export function Projects() {
       githubUrl: "https://github.com/Fpaganoni/tendify",
     },
     {
+      title: "Personal Trainer Website",
+      description:
+        "This project is a modern, high-performance landing page designed for a personal trainer to showcase their services, credentials, and coaching methodology. Built with Next.js and React, the platform offers a seamless and responsive user experience across all devices. The interface features sleek, dynamic scroll animations powered by Framer Motion, while Tailwind CSS provides a clean and highly scalable design system. The application emphasizes accessibility and fast load times, seamlessly connecting potential clients through direct WhatsApp integration. TypeScript is utilized throughout the codebase to ensure robust type safety and maintainability.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/personal-trainer-web.jpg",
+      technologies: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "NPM",
+      ],
+      liveUrl: "https://personal-trainer-web-ruddy.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/Personal-Trainer-web",
+    },
+    {
       title: "Tattoo Studio Landing Page",
       description:
-        "The Tattoo Booking System is a full-stack web application for managing appointments in tattoo studios. It allows clients to register and autonomously manage their appointments.The project is built with React.js on the frontend, and a backend with Node.js, Express, and TypeScript, connected to a PostgreSQL database.This system demonstrates my ability to develop a complete and efficient software architecture.",
+        "The Tattoo Booking System is a full-stack web application for managing appointments in tattoo studios. It allows clients to register and autonomously manage their appointments. The project is built with React.js on the frontend, and a backend with Node.js, Express, and TypeScript, connected to a PostgreSQL database. This system demonstrates my ability to develop a complete and efficient software architecture.",
       image: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/tattoWeb.jpg",
       technologies: [
         "React",
