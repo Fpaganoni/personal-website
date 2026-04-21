@@ -142,7 +142,7 @@ export function Hero() {
                 className="w-80 h-80 mx-auto rounded-full overflow-hidden border-4 border-primary/20"
               >
                 <Image
-                  src="https://ik.imagekit.io/p2ho5d9bi/Portfolio/Pefil%20-%20CV.png?updatedAt=1754667885113"
+                  src="https://ik.imagekit.io/p2ho5d9bi/Portfolio/definitive-profile.jpg"
                   alt="Profile photo"
                   width={320}
                   height={320}
