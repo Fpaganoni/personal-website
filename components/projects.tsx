@@ -6,10 +6,11 @@ import { motion } from "motion/react";
 export function Projects() {
   const projects = [
     {
-      title: "Hockey Social Network Platform",
+      title: "Sick Transfer",
       description:
-        "This project is a comprehensive social networking platform designed specifically for the hockey community. It provides a dedicated and interactive space for players, teams, and fans to connect, share updates, and engage with customized content. The frontend is built with Next.js, React, and Tailwind CSS, delivering a highly responsive, performant, and accessible user interface, enhanced by elegant micro-animations using Framer Motion. Under the hood, the application leverages a robust GraphQL architecture, utilizing React Query for efficient data fetching and caching, alongside Zustand for seamless global state management. It also features full internationalization (i18n) support to cater to a global user base. This project demonstrates my ability to build sophisticated, highly scalable frontend ecosystems connected to a custom backend API, prioritizing both developer experience and user-centric design.",
-      image: "https://ik.imagekit.io/p2ho5d9bi/Portfolio/hockey-connect.jpg",
+        "This project is a professional recruitment and networking platform designed to seamlessly connect sports clubs, trainers, and coaches with global job opportunities. It serves as a dedicated hub within the sports industry, empowering clubs to discover top-tier talent and professionals to advance their careers through a highly intuitive user experience. The frontend is architected with Next.js, React, and Tailwind CSS, integrating Radix UI to deliver an accessible, performant, and responsive interface enriched by fluid micro-animations using Framer Motion. Under the hood, the application leverages a robust GraphQL architecture, utilizing React Query for optimized data fetching and caching, paired with Zustand for streamlined global state management. Furthermore, it incorporates real-time capabilities via Socket.io and features comprehensive internationalization (i18n) to cater to a diverse, worldwide audience. This project highlights my proficiency in building sophisticated, enterprise-grade frontend ecosystems that prioritize both exceptional developer experience and premium, user-centric design.",
+      image:
+        "https://ik.imagekit.io/p2ho5d9bi/Portfolio/sticktransfer-landing.jpg",
       technologies: [
         "TypeScript",
         "React",
@@ -23,9 +24,10 @@ export function Projects() {
         "Radix UI",
         "Framer Motion",
         "i18n/Next-intl",
+        "Socket.io",
       ],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Fpaganoni/hockey-social-app",
+      liveUrl: "https://stick-transfer.vercel.app/",
+      githubUrl: "https://github.com/Fpaganoni/stick-transfer",
     },
     {
       title: "Modern E-commerce Trendify Store",
